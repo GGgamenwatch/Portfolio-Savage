@@ -1,0 +1,78 @@
+.jumbotron{
+    padding: 30px;
+    background-image: linear-gradient(to right, dimgray, black);
+    color: white;
+    margin: 0;
+    background-size: cover;
+}
+.navbar{
+    background-color: black;
+    height: 7%;
+}
+body{
+    background-color: linear-gradient( dimgrey,black);
+}
+.site-footer{
+    background-image: linear-gradient(to right, dimgrey,black);
+}
+.flex-container{
+    background-color: linear-gradient(to right, dimgrey,black);
+
+}
+
+.carousel-slide{
+    width: 56%;
+    height: 5%;
+}
+.container1{
+    display: flex;
+    padding: 10px;
+    background-color: linear-gradient(dimgrey,black);
+    
+}
+
+h4{
+    color: white;
+}
+@media(min-width:768px){
+    .container-cars{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .container-cars1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-cars2{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+      
+}
+.image{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.bottom{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text{
+    background-color: white;
+    color: yellow;
+    font-size: 10px;
+    padding: 16px 32px;
+}
+
+
