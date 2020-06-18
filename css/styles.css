@@ -1,0 +1,57 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Lobster", cursive; }
+
+h2 {
+  color: #3046c5; }
+
+header h2 {
+  color: #CEC8ff; }
+
+.site-footer {
+  background-image: linear-gradient(#CEC8ff, white);
+  padding: 20px; }
+
+.jumbotron {
+  padding: 30px;
+  background-image: linear-gradient(to right, #3046c5, #3046c5, #60106B);
+  color: white;
+  margin: 0; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: #901CAD; }
+
+.tab-content {
+  border: 1px solid white;
+  border-top: none;
+  padding: 10px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: #3046c5; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+#reserveButton.modal-title {
+  background-color: #17A2B8;
+  color: white; }
+
+#loginButton {
+  background-color: #901CAD;
+  color: white; }
+
+.modal-header {
+  background-color: #901CAD;
+  color: white; }

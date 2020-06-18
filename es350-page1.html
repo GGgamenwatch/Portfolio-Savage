@@ -1,5 +1,5 @@
 <!doctype html>
-<head>
+    <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!--Bootstrap CSS-->
@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="lexus.css" />
+        <meta charset="UTF-8">
+    
+    </head>
+
     <style>
         body{
             background: linear-gradient(grey, black);
@@ -28,12 +32,24 @@
             box-shadow: white;
             padding: 10px;
         }
+        .form-group{
+            border-radius: 10px;
+            border-style: solid;
+            border-color: white;
+            background-color: white;
+        }
+        hr{
+            margin-bottom: 0px;
+        }
+        #card-div{
+            background-color: white;
+        }
     </style>    
 
-</head>
+
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="nav-logo.jpg" height="100%" width="30px"></a>
             <button class="navbar-toggler" type="button" 
@@ -124,75 +140,215 @@
         </div>
     </header>
 
+    <!--<div class="container dropdown-toggle">
+        <div class="row" id="searchbar">
+            <form id="search-form" action="" method="POST"
+                enctype="multipart/form-data">
+                <div class="form-group col-sm">
+                    <br>
+                    <input class="form-control" type="text" placeholder="search"/>
+                        <hr>
+                        <br>
+                        
+                    <div class="col-sm">
+                        <select data-filter="make" class="form-control">
+                            <option value="">Select Make</option>
+                            <option value="">Show All</option>
+                            <option value="">ES F Sport</option>
+                        </select>
+                    </div>
+                    
+                    <hr>
+                    <br>
+                    <div class="col-sm">
+                        <select data-filter="make" class="form-control">
+                            <option value="">Select Model</option>
+                            <option value="">Show All</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="col-sm">
+                        <select data-filter="make" class="form-control">
+                            <option value="">Engine</option>
+                            <option value="">Show All</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="col-sm">
+                        <select data-filter="make" class="form-control">
+                            <option value="">Price Range</option>
+                            <option value="">Show All</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </form>    
+            <main class="col filtr-container galleryContainer" id="card-div">
+                <div class="card mb-3 option-1">
+                    <div class="row" data-catagory="es-fsport">
+                        <div class="col-md-4">
+                            
+                            <img src="es-fsport-card1.jpg" data-tags="ES F-Sport" width="200px" class="card-img" alt="responsive image">
+            
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">2020 Lexus ES 350 F Sport</h5> <h5>MSRP: $50,000</h5>
+                                <p class="card-text">Engine: 3.5L V6<br>
+                                    Transmission: 10 Speed Auto<br>
+                                    Stock#: 10101<br>
+                                    Color: Ultrasonic Blue Mica<br>
+                                    Drivetrain: FWD
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="card mb-3 option-2">        
+                    <div class="row no-gutters">    
+                        <div class="col-md-4 ">
+                            <img src="es-350-card-white.jpg" width="200px" class="card-img" alt="responsive image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">2020 Lexus ES350</h5> <h5>MSRP: $43,789</h5>
+                                <p class="card-text">Engine: 3.5L V6<br>
+                                    Transmission: 10 Speed Auto<br>
+                                    Stock#: 10102<br>
+                                    color: Eminent White Pearl<br>
+                                    Drivetrain: FWD
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 option-3">    
+                    <div class="row no-gutters">    
+                        <div class="col-md-4 ">
+                            <img src="es-card-luxury.webp" width="200px" class="card-img" alt="responsive image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">2020 Lexus ES350 Luxury</h5> <h5>MSRP: $51,223 </h5>
+                                <p class="card-text">Engine: 3.5L V6<br>
+                                    Transmission: 10 Speed Auto<br>
+                                    Stock#: 10103<br>
+                                    color: Nebula Grey Pearl<br>
+                                    Drivetrain: FWD
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 option-4">    
+                    <div class="row no-gutters">    
+                        <div class="col-md-4 ">
+                            <img src="es-hybrid-card.jpg" width="200px" class="card-img" alt="responsive image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">2020 Lexus ES300 Hybrid</h5> <h5>MSRP: $46,950 </h5>
+                                <p class="card-text">Engine: 2.5L L4<br>
+                                    Transmission: CVT<br>
+                                    Stock#: 10104<br>
+                                    color: Silver Lining Metallic<br>
+                                    Drivetrain: FWD
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </main>    
+        </div>
+    </div>-->
     <div class="container">
         <div class="row" id="searchbar">
             <form id="search-form" action="" method="POST"
-            enctype="multipart/form-data">
-                <div class="form-group col-xs-9">
+                enctype="multipart/form-data">
+                <div class="form-group col-sm">
+                    <br>
                     <input class="form-control" type="text" placeholder="search"/>
-                </div>
-                <div class="form-group col-xs-3">
-                    <button type="submit" class="btn btn-primary">Search</button>
+                        <hr>
+                        <br>
+                    <div class="col-sm filter-block">
+                        <select data-filter="make" class="form-control">
+                            <option value="all">Select Make</option>
+                            <option value="all">Show All</option>
+                            <option value="es-f-sport">ES F-Sport</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="col-sm">
+                        <select data-filter="model" class="form-control">
+                            <option value="all">Select Model</option>
+                            <option value="all">Show All</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="col-sm">
+                        <select data-filter="engine" class="form-control">
+                            <option value="all">Engine</option>
+                            <option value="all">Show All</option>
+                            
+                        </select>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="col-sm">
+                        <select data-filter="price" class="form-control">
+                            <option value="all">Price Range</option>
+                            <option value="all">Show All</option>
+                            <option value="50,000"> > 50,000</option>
+                            <option value="45,000"> > 45,000</option>
+                            <option value="40,000"> > 40,000</option>
+                            <option value="100,000"> > 100,000</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </form>    
-        </div>
-        <div class="row" id="filter">
-            <form>
-                <div class="form-group col-sm-3 col-xs-6">
-                    <select data-filter="make" class="filter-make filter form-control">
-                        <option value="">Select Make</option>
-                        <option value="">Show All</option>
-                    </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                    <select data-filter="make" class="filter-make filter form-control">
-                        <option value="">Select Model</option>
-                        <option value="">Show All</option>
-                    </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                    <select data-filter="make" class="filter-make filter form-control">
-                        <option value="">Engine</option>
-                        <option value="">Show All</option>
-                    </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                    <select data-filter="make" class="filter-make filter form-control">
-                        <option value="">Price Range</option>
-                        <option value="">Show All</option>
-                    </select>
-                </div>
-            </form>
-        </div>
-        <div class="row" id="products">
-
-        </div>
-    </div>
-
-    <div class="container-products">
-        <div class="card mb-3" style="max-width: 350px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="es-fsport-card1.jpg" width="200px" class="card-img" alt="responsive image">
-
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">2020 Lexus ES 350 F Sport</h5>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-            </div>
+            <main class="col" id="card-div">
+               
+       
+            </main>    
         </div>
     </div>
 
 
+    
 
 
 
-    <script>
 
-    </script>
+
+
+
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index-rf.js"></script>
 
 
 
